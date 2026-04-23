@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth scroll-pt-20" lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>DLMV Terapia | Especialistas en Deglución, Lenguaje y Voz</title>
+        <!-- Tailwind CSS v3 CDN -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Public_Sans:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <style>
+            .signature-gradient {
+                background: linear-gradient(135deg, #0a6879 0%, #98e3f5 100%);
+            }
+            h1, h2, h3, h4, p { font-family: 'Manrope', sans-serif; }
+
+            .slideRightScroll {
+                opacity: 0;
+                transform: translateX(-40px);
+                transition: all 1.2s ease;
+            }
+
+            .slideRightScroll.show {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+
+        </style>
+
+        </head>
+        <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+            extend: {
+                "colors": {
+                        "primary": "#006a71",
+                        "secondary-container": "#b1ecff",
+                        "secondary-text": "#60B7D3",
+                        "ternary": "#f4a3b4",
+                        "on-surface": "#2c3436",
+                        "on-surface-variant": "#596063",
+                },
+                "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                }
+            },
+            },
+        }
+        
+        </script>
+
+    <body class="[--nav:80px]">
+        <nav class="hidden md:block bg-white fixed top-0 w-full shadow-sm z-50">
+            <div class="flex justify-between items-center w-full px-8 h-20">
+                <!-- <div class="text-2xl font-extrabold tracking-tighter text-[#006a71] font-['Manrope']"> -->
+                <a href="#" class="flex items-center cursor-pointer">
+                    <img class="w-20 h-20 object-contain" src="./img/logo.jpg"/>
+                    <span class="sm:text-xl xl:text-2xl 2xl:text-3xl font-bold tracking-tighter text-[#006a71] font-['Manrope']">DLMV Terapia</span>
+                </a>
+                <div class="ms:flex items-center space-x-8 font-['Manrope'] font-medium tracking-tight">
+                    <a autofocus href="#" class="sm:text-base xl:text-lg 2xl:text-xl outline-none text-[#2c3436]/70 hover:text-[#007B83] transition-all cursor-pointer focus:text-[#006a71] focus:font-bold focus:border-b-2 focus:border-[#006a71]">Inicio</a>
+                    <a href="#about" class="sm:text-base xl:text-lg 2xl:text-xl text-[#2c3436]/70 hover:text-[#007B83] transition-all cursor-pointer focus:text-[#006a71] focus:font-bold focus:border-b-2 focus:border-[#006a71]">Sobre nosotros</a>
+                    <a href="#services" class="sm:text-base xl:text-lg 2xl:text-xl text-[#2c3436]/70 hover:text-[#007B83] transition-all cursor-pointer focus:text-[#006a71] focus:font-bold focus:border-b-2 focus:border-[#006a71]">Metodologías</a>
+                    <a href="#contact" class="sm:text-base xl:text-lg 2xl:text-xl text-[#2c3436]/70 hover:text-[#007B83] transition-all cursor-pointer focus:text-[#006a71] focus:font-bold focus:border-b-2 focus:border-[#006a71]">Contacto</a>
+                </div>
+
+                <a href="https://app.hulivida.com/citas/melissa-araya-jimenez_151903"
+                    target="_blank">
+                    <button class="signature-gradient bg-[#007B83] text-white sm:px-4 sm:py-2 2xl:py-4 rounded-lg font-bold transition-transform active:scale-95 duration-150 ease-in-out">
+                        Agendar Cita
+                    </button>
+                </a>
+                </div>
+        </nav>
+
+        <div class="block sm:flex h-screen sm:pt-20">
+            <div class="flex-1 pt-[4rem]">
+                <div class="pl-10 xl:pl-20">
+                    <span class="hidden sm:block inline-block w-fit px-4 py-1.5 mb-6 rounded-full bg-secondary-container text-primary sm:text-xs 2xl:text-base font-semibold tracking-wide">
+                        Atención Especializada <span>💎</span> 
+                    </span>
+                    <h1 class="text-[35px] sm:text-6xl 2xl:text-7xl font-bold text-on-surface leading-[1.1] mb-2 xl:mb-6 tracking-tighter">
+                        Especialistas en  <span class="text-secondary-text">Terapia de voz</span> 
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl 2xl:text-3xl font-bold text-on-surface leading-[1.1] mb-8 tracking-tighter">Miofuncional, deglución, disfagia.</h2>
+                    <!-- imagen mobile -->
+                    <div class="block sm:hidden flex justify-center h-[27vh] w-[80vw]">
+                        <img class="object-contain" src="./img/logo.jpg"/>
+                    </div>
+
+                    <!-- botones agendar y metodologias -->
+                    <div class="flex gap-1 xl:gap-10 mt-6 sm:mt-18 xl:mt-[50px] 2xl:mt-[60px]">
+                        <a href="https://app.hulivida.com/citas/melissa-araya-jimenez_151903"
+                            target="_blank">
+                                <button class="signature-gradient bg-[#007B83] text-white px-6 py-4 sm:py-3 xl:py-4 rounded-lg font-bold transition-transform active:scale-95 duration-150 ease-in-out hover:opacity-90">
+                                    Agendar Cita
+                                </button>
+                        </a>
+                        <button onclick="location.href='#services'" class="cursor-pointer border border-outline/20 text-primary px-[0.2rem] py-4 sm:py-2 rounded-lg font-bold transition-transform active:scale-95 duration-150 ease-in-out hover:border-primary hover:bg-gray-100">
+                            Ver Metodologías
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div imagen grande -->
+            <div class="hidden sm:block flex-1 py-10">
+                <div class="relative h-[85%] pl-[10%] pr-[35%] xl:pr-[30%]">
+                     <img class="h-full w-full rounded-2xl shadow-md" src="./img/imagen1.jpeg"/>
+                    <!-- foto -->
+                     <div class="absolute -bottom-10 left-[30%]">
+                        <img class="rounded-full w-[32%] h-[30%] shadow-lg" src="img/Captura.PNG">
+                    </div>
+
+                    <!-- verificación -->
+                    <div class="absolute bg-white py-[1.5%] px-[1%] border rounded-2xl lg:-bottom-6 -bottom-2 lg:-left-5 left-5 shadow-lg w-[15vw]">
+                        <div class="flex justify-center">
+                            <div class="lg:w-10 xl:w-14 lg:h-8 xl:h-12 bg-ternary/40 rounded-full flex items-center justify-center text-tertiary">
+                                <span class="lg:text-xs xl:text-base text-ternary material-symbols-outlined">verified</span>
+                            </div>
+                            <p class="lg:text-xs xl:text-sm font-bold xl:ml-[10%] ml-[5%]">Colegio de Terapeutas </p>
+                        </div>
+                        <p class="lg:mt-2 lg:text-[10px] xl:text-xs lg:text-center">Dra. Melissa Araya Jimenez</p>
+                    </div>
+
+                </div> 
+                
+            </div>
+        </div>
+
+        
+        <!-- sobre nosotros -->
+        <section id="about" class="block sm:flex h-auto sm:h-[calc(120vh-var(--nav))]">
+            <div class="hidden sm:block w-1/2">
+                <div class="flex justify-center">
+                    <div class="w-[50%] relative overflow-hidden rounded-2xl border border-outline">
+                        <div id="slider" class="flex transition-transform duration-500">
+                            <img class="w-[100%] h-[80vh] flex-shrink-0" src="./img/slide3.PNG"/>
+                            <img class="w-[100%] h-[80vh] flex-shrink-0" src="./img/slide1.png"/>
+                            <img class="w-[100%] h-[80vh] flex-shrink-0" src="./img/slide5.PNG"/>
+                            <img class="w-[100%] h-[80vh] flex-shrink-0 " src="./img/slide6.PNG"/>
+                            <img class="w-[100%] h-[80vh] flex-shrink-0" src="./img/slide7.PNG"/>
+                            <img class="w-[100%] h-[80vh] flex-shrink-0 " src="./img/slide8.PNG"/>
+                        </div>
+                        <!-- Botones -->
+                        <button id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/05 text-white px-3 py-1">←</button>
+                        <button id="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/05 text-white px-3 py-1">→</button>
+                        <!-- Indicadores -->
+                        <!-- <div id="dots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2">
+                <div class="m-10">
+                    <!-- <h4 class="text-primary font-bold tracking-widest uppercase text-sm mb-2">Misión y Visión</h4> -->
+                    <h2 class="text-2xl sm:text-xl xl:text-2xl 2xl:text-3xl font-bold mb-2 2xl:mb-8 leading-tight tracking-tight">Santuario Clínico para su Recuperación</h2>
+                    <p class="sm:text-sm xl:text-base 2xl:text-lg text-on-surface-variant mb-2 leading-relaxed">
+                        En <strong>DLMV Terapia</strong>, creemos que la comunicación y la alimentación son pilares fundamentales de la dignidad humana. Nuestra misión es proporcionar un espacio donde la evidencia clínica se encuentre con la empatía.
+                    </p>
+                    <p class="sm:text-sm xl:text-base 2xl:text-lg text-on-surface-variant mb-4 sm:mb-6 2xl:mb-12 leading-relaxed">
+                        Ubicados en el corazón de Escazú, diseñamos planes terapéuticos a medida que no solo tratan síntomas, sino que transforman la calidad de vida de nuestros pacientes.
+                    </p>
+                    <ul class="space-y-4 2xl:space-y-6 mb-10">
+                        <li class="flex items-center gap-3">
+                            <span class="sm:text-xl xl:text-2xl material-symbols-outlined text-primary">check_circle</span>
+                            <span class="sm:text-sm xl:text-base 2xl:text-lg font-semibold">Evaluación integral y personalizada</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="sm:text-xl xl:text-2xl material-symbols-outlined text-primary">check_circle</span>
+                            <span class="sm:text-sm xl:text-base 2xl:text-lg font-semibold">Ambiente clínico sereno y moderno</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="sm:text-xl xl:text-2xl material-symbols-outlined text-primary">check_circle</span>
+                            <span class="sm:text-sm xl:text-base 2xl:text-lg font-semibold">Especialistas en constante actualización</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- metodologias -->
+        <section id="services" class="h-auto lg:h-[calc(140vh-var(--nav))] bg-gray-100">
+            <h2 class="pl-2 sm:pl-20 pt-20 text-3xl sm:text-2xl xl:text-4xl 2xl:text-5xl font-bold text-on-surface tracking-tight">Nuestras Especialidades</h2>
+            <p class="pl-2 sm:pl-20 pt-6 w-[90%] xl:w-[40%] sm:text-sm xl:text-base 2xl:text-lg text-justify text-on-surface-variant leading-relaxed">Abordamos cada caso desde una perspectiva científica y humana, enfocándonos en la rehabilitación funcional de la comunicación y nutrición.</p>
+            <div class="flex flex-col sm:flex-row sm:justify-between mt-10 gap-10 h-[33%] xl:h-[27%] mx-[4%]">
+                <div onclick="window.location.href='deglucion.html'" class="relative w-[100%] lg:w-[30%] xl:w-[25%] p-10 lg:p-5 bg-white rounded-2xl border border-outline/20 cursor-pointer slideRightScroll">
+                    <h4 class="text-xl sm:text-lg xl:text-xl 2xl:text-2xl font-bold mb-4">Terapia de Deglución</h4>
+                    <p class="sm:text-sm xl:text-base 2xl:text-lg text-on-surface-variant leading-relaxed text-justify">Intervención especializada para asegurar una alimentación segura y eficiente en pacientes con disfagia o dificultades de paso de alimento.</p>
+                    <!-- más informacion -->
+                    <div class="absolute flex gap-2 items-center right-10 lg:right-5 bottom-4 lg:bottom-5">
+                        <a class="sm:text-sm xl:text-base 2xl:text-lg text-primary underline">Más información</a>
+                        <i class="text-primary fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div onclick="window.location.href='miofuncional.html'" class="relative w-[100%] lg:w-[30%] xl:w-[25%] p-10 lg:p-5 bg-white rounded-2xl border border-outline/20 cursor-pointer slideRightScroll">
+                    <h4 class="text-xl sm:text-lg xl:text-xl 2xl:text-2xl font-bold mb-4">Lenguaje Miofuncional</h4>
+                    <p class="sm:text-sm xl:text-base 2xl:text-lg text-on-surface-variant leading-relaxed text-justify">Intervención especializada para asegurar una alimentación segura y eficiente en pacientes con disfagia o dificultades de paso de alimento.</p>
+                    <!-- más informacion -->
+                    <div class="absolute flex gap-2 items-center right-10 lg:right-5 bottom-4 lg:bottom-5">
+                        <a class="sm:text-sm xl:text-base 2xl:text-lg text-primary underline">Más información</a>
+                        <i class="text-primary fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                    
+                </div>
+                <div onclick="window.location.href='voz.html'" class="relative w-[100%] lg:w-[30%] xl:w-[25%] p-10 lg:p-5 bg-white rounded-2xl border border-outline/20 cursor-pointer slideRightScroll">
+                    <h4 class="text-xl sm:text-lg xl:text-xl 2xl:text-2xl font-bold mb-4">Terapia de Voz</h4>
+                    <p class="sm:text-sm xl:text-base 2xl:text-lg text-on-surface-variant leading-relaxed text-justify">Cuidado especializado para profesionales de la voz y pacientes con dificultades vocales, optimizando la proyección y salud laríngea.</p>
+                    <!-- más informacion -->
+                    <div class="absolute flex gap-2 items-center right-10 lg:right-5 bottom-4 lg:bottom-5">
+                        <a class="sm:text-sm xl:text-base 2xl:text-lg text-primary underline">Más información</a>
+                        <i class="text-primary fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- reseñas -->
+            <div class="h-[30%] mt-10">
+                <div class="flex items-center justify-center">
+                    <img src="https://www.google.com/favicon.ico" alt="Google">
+                    <p class="ml-[1%] font-bold">10</p>
+                    <i class="ml-[1%] text-yellow-400 fas fa-star"></i>
+                    
+                </div>
+                <div class="flex flex-col gap-5 sm:gap-0 sm:flex-row justify-between h-[70%] lg:h-[80%] mt-10 mx-[4%]">
+                    <div class="relative w-[100%] lg:w-[30%] xl:w-[25%] p-10 lg:p-5 bg-white rounded-2xl border border-outline/20 cursor-pointer slideRightScroll">
+                        <div class="flex items-center">
+                            <img class="w-[12%] rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg"/>
+                            <p class="ml-[3%] font-bold">Heiner Andrés</p>
+                        </div>
+                        <div class="flex mt-[2%]">
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                        </div>
+                        <p class="sm:text-sm xl:text-base 2xl:text-lg xl:mt-[5%] text-on-surface-variant leading-relaxed text-justify">Excelente atención. La terapia de lenguaje me ayudó muchísimo a mejorar mi pronunciación en poco tiempo. Muy profesional y paciente.</p>
+                    </div>
+                    <div class="relative w-[100%] lg:w-[30%] xl:w-[25%] p-10 lg:p-5 bg-white rounded-2xl border border-outline/20 cursor-pointer slideRightScroll">
+                        <div class="flex items-center">
+                            <img class="w-[12%] rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg"/>
+                            <p class="ml-[3%] font-bold">Carolina Cuningham</p>
+                        </div>
+                        <div class="flex mt-[2%]">
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                        </div>
+                        <p class="sm:text-sm xl:text-base 2xl:text-lg xl:mt-[5%] text-on-surface-variant leading-relaxed text-justify">Muy buena experiencia. Desde las primeras sesiones noté avances en mi comunicación. El trato es amable y profesional.</p>
+                    </div>
+                    <div class="relative w-[100%] lg:w-[30%] xl:w-[25%] p-10 lg:p-5 bg-white rounded-2xl border border-outline/20 cursor-pointer slideRightScroll">
+                        <div class="flex items-center">
+                            <img class="w-[12%] rounded-full" src="https://randomuser.me/api/portraits/men/75.jpg"/>
+                            <p class="ml-[3%] font-bold">Carlos Ramírez</p>
+                        </div>
+                        <div class="flex mt-[2%]">
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                            <i class="text-yellow-400 fas fa-star"></i>
+                        </div>
+                        <p class="sm:text-sm xl:text-base 2xl:text-lg xl:mt-[5%] text-on-surface-variant leading-relaxed text-justify">Recomendada totalmente. Me sentí muy cómodo durante las sesiones y los ejercicios realmente funcionan. Se nota la experiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contacto -->
+        <section id="contact" class="p-0 sm:p-10 bg-gray-100 h-auto sm:h-[calc(110vh-var(--nav))]">
+            <div class="block sm:flex bg-white w-full h-full rounded-[3rem]">
+                <div class="w-full sm:w-1/2">
+                    <!-- información de contacto -->
+                    <div class="m-4 sm:ml-14 sm:m-10">
+                        <h2 class="text-2xl sm:text-3xl xl:text-4xl font-bold mb-2 leading-tight tracking-tight">Sientase libre contáctenos</h2>
+                        <p class="sm:text-sm xl:text-base text-on-surface-variant mb-2 leading-relaxed">Estamos listos para acompañarle en su proceso de rehabilitación.</p>
+
+                        <div class="space-y-10 mt-8">
+                            <div class="flex items-center gap-6">
+                                <div class="w-14 sm:w-12 xl:w-14 h-14 sm:h-12 xl:h-14 bg-gray-100 rounded-2xl flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                </div>
+                                <div>
+                                    <h4 class="hidden sm:block text-xl sm:text-lg xl:text-xl font-bold mb-1">Ubicación</h4>
+                                    <p class="sm:text-sm xl:text-base text-on-surface-variant">Momentum Escazú, San José</p>
+                                    <p class="sm:text-xs xl:text-sm hidden sm:block text-on-surface-variant text-sm">Consultorio de Terapia Especializada</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-6">
+                                <div class="w-14 sm:w-12 xl:w-14 h-14 sm:h-12 xl:h-14 bg-gray-100 rounded-2xl flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div>
+                                    <h4 class="hidden sm:block text-xl sm:text-lg xl:text-xl font-bold mb-1">Teléfonos</h4>
+                                    <p class="sm:text-xs xl:text-base text-on-surface-variant font-bold">8925-2748 • 7205-0577</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6">
+                                <div class="w-14 sm:w-12 xl:w-14 h-14 sm:h-12 xl:h-14 bg-gray-100 rounded-2xl flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined">mail</span>
+                                </div>
+                                <div>
+                                    <h4 class="hidden sm:block text-xl sm:text-lg xl:text-xl font-bold mb-1">Email</h4>
+                                    <a class="sm:text-xs xl:text-base text-primary hover:underline" href="mailto:clinicadlvterapia@gmail.com">clinicadlvterapia@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mitad del mapa -->
+                <div class="flex flex-col w-full w-[100vw] sm:w-1/2">
+                    <div class="h-2/3 2xl:h-auto w-[100vw] lg:w-[40vw] xl:w-[40vw] sm:m-10 mt-14">
+                        <div class="lg:w-[100%] xl:w-[100%] 2xl:w-[80%] h-[60vh] 2xl:w-[70%] border border-red-500/30 p-5 rounded-2xl">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.8505415802606!2d-84.15177102674866!3d9.94639077395852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb83f93cdcc7%3A0x8244fd655b3e407b!2sMomentum%20Escaz%C3%BA!5e0!3m2!1sen!2scr!4v1775782186106!5m2!1sen!2scr" 
+                                loading="lazy" class="h-[70%] w-[100%] rounded-2xl shadow-xl">
+                            </iframe>
+                            <div class="flex items-center justify-center mt-[10%]">
+                                <i class="text-yellow-400 fas fa-star"></i>
+                                <i class="text-yellow-400 fas fa-star"></i>
+                                <i class="text-yellow-400 fas fa-star"></i>
+                                <span>💎</span>
+                                <i class="text-yellow-400 fas fa-star"></i>
+                                <i class="text-yellow-400 fas fa-star"></i>
+                            </div>
+                            <div class="hidden xl:block">
+                                Fotos  <span>💎</span> 
+                                Fotos  <span>💎</span> Fotos <span>💎</span> 
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- botones del mapa -->
+                    <div class="flex justify-center gap-2 h-1/3 2xl:h-1/4 w-[100vw] lg:w-[40vw] xl:w-[80%] pt-5 pl-0 sm:pl-10 bg-red]">
+                        <a href="https://app.hulivida.com/citas/melissa-araya-jimenez_151903"
+                            target="_blank">
+                                <button class="signature-gradient bg-[#007B83] text-white px-6 py-2.5 rounded-lg font-bold transition-transform active:scale-95 duration-150 ease-in-out">
+                                    Agendar Cita
+                                </button>
+                        </a>
+                        <a href="https://wa.me/50689252748" target="_blank">
+                            <button class="inline-block border border-outline/20 text-ternary px-6 py-2.5 rounded-lg font-bold transition-transform active:scale-95 duration-150 ease-in-out hover:-translate-y-0.5 transition-all duration-300">
+                                <i class="fa-brands fa-whatsapp text-ternary"></i>
+                                Escríbeme
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="w-full pt-16 pb-8 bg-gray-50">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 font-['Public_Sans'] text-sm leading-relaxed">
+                <div class="space-y-4">
+                    <div class="text-xl sm:text-lg font-bold text-primary font-['Manrope']">DLMV Terapia</div>
+                        <p class="sm:text-sm text-on-surface-variant leading-relaxed">Excelencia clínica y calidez humana en cada sesión terapéutica.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h5 class="text-primary font-semibold">Ubicación</h5>
+                        <p class="sm:text-sm text-on-surface-variant leading-relaxed">Momentum Escazú, San José</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h5 class="text-primary font-semibold">Contacto</h5>
+                        <p class="sm:text-sm text-on-surface-variant leading-relaxed">+506 8888-8888</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h5 class="text-primary font-semibold">Email</h5>
+                        <p class="sm:text-sm text-on-surface-variant leading-relaxed">hola@dlmvterapia.com</p>
+                    </div>
+                </div>
+                <div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10">
+                        <div class="flex gap-4 justify-center mt-16 h-[10%] mb-[1%]">
+                            <a href="#" class="text-green-500">
+                                <i class="text-xl fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="text-blue-600">
+                                <i class="text-xl fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-black">
+                                <i class="text-xl fa-brands fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="text-pink-500">
+                                <i class="text-xl fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    <p class="text-center text-xs">
+                        © 2026 DLMV Terapia. The Clinical Sanctuary. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="fixed bottom-5 right-5 z-50 flex items-center justify-center">
+            <!-- Onda 1 -->
+            <span class="absolute w-16 h-16 border-2 border-red-300 rounded-full animate-ping opacity-75 [animation-duration:2s]"></span>
+            <!-- Botón -->
+            <a href="https://wa.me/506XXXXXXXX"
+                target="_blank"
+                class="relative w-16 h-16 bg-red-300 hover:bg-red-400 text-white rounded-full flex items-center justify-center shadow-lg text-2xl">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
+
+
+
+<!-- 
+Terapia de Deglución
+Intervención especializada para asegurar una alimentación segura y eficiente en pacientes con disfagia o dificultades de paso de alimento.
+
+Lenguaje Miofuncional
+Equilibrio de las funciones musculares orofaciales (respiración, succión, masticación) para un desarrollo armónico del habla.
+
+Terapia de Voz
+Cuidado especializado para profesionales de la voz y pacientes con dificultades vocales, optimizando la proyección y salud laríngea.
+ -->

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth scroll-pt-20" lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>DLMV Terapia | Especialistas en Deglución, Lenguaje y Voz</title>
+        <!-- Tailwind CSS v3 CDN -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Public_Sans:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <style>
+            .signature-gradient {
+                background: linear-gradient(135deg, #0a6879 0%, #98e3f5 100%);
+            }
+            h1, h2, h3, h4, p { font-family: 'Manrope', sans-serif; }
+
+            .slideRightScroll {
+                opacity: 0;
+                transform: translateX(-40px);
+                transition: all 1.2s ease;
+            }
+
+            .slideRightScroll.show {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+
+        </style>
+
+        </head>
+        <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+            extend: {
+                "colors": {
+                        "primary": "#006a71",
+                        "secondary-container": "#b1ecff",
+                        "secondary-text": "#60B7D3",
+                        "ternary": "#f4a3b4",
+                        "on-surface": "#2c3436",
+                        "on-surface-variant": "#596063",
+                },
+                "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                }
+            },
+            },
+        }
+        
+        </script>
+
+    <body class="[--nav:80px]">
+        <nav class="hidden md:block bg-white fixed top-0 w-full shadow-sm z-50">
+            <div class="flex justify-between items-center w-full px-8 h-20">
+                <!-- <div class="text-2xl font-extrabold tracking-tighter text-[#006a71] font-['Manrope']"> -->
+                <a href="#" class="flex items-center cursor-pointer">
+                    <img class="w-20 h-20 object-contain" src="./img/logo.jpg"/>
+                    <span class="sm:text-xl xl:text-2xl 2xl:text-3xl font-bold tracking-tighter text-[#006a71] font-['Manrope']">DLMV Terapia</span>
+                </a>
+                <div class="ms:flex items-center space-x-8 font-['Manrope'] font-medium tracking-tight">
+                    <a autofocus href="./index.html" class="sm:text-base xl:text-lg 2xl:text-xl outline-none text-[#2c3436]/70 hover:text-[#007B83] transition-all cursor-pointer focus:text-[#006a71] focus:font-bold focus:border-b-2 focus:border-[#006a71]">Inicio</a>
+                    <a href="./index.html" class="sm:text-base xl:text-lg 2xl:text-xl text-[#2c3436]/70 hover:text-[#007B83] transition-all cursor-pointer focus:text-[#006a71] focus:font-bold focus:border-b-2 focus:border-[#006a71]">Sobre nosotros</a>
+                    <a href="./index.html" class="sm:text-base xl:text-lg 2xl:text-xl text-[#2c3436]/70 hover:text-[#007B83] transition-all cursor-pointer focus:text-[#006a71] focus:font-bold focus:border-b-2 focus:border-[#006a71]">Metodologías</a>
+                    <a href="./index.html" class="sm:text-base xl:text-lg 2xl:text-xl text-[#2c3436]/70 hover:text-[#007B83] transition-all cursor-pointer focus:text-[#006a71] focus:font-bold focus:border-b-2 focus:border-[#006a71]">Contacto</a>
+                </div>
+
+                <a href="https://app.hulivida.com/citas/melissa-araya-jimenez_151903"
+                    target="_blank">
+                    <button class="signature-gradient bg-[#007B83] text-white sm:px-4 sm:py-2 2xl:py-4 rounded-lg font-bold transition-transform active:scale-95 duration-150 ease-in-out">
+                        Agendar Cita
+                    </button>
+                </a>
+                </div>
+        </nav>
+
+        <div class="sm:pt-20">
+            <div class="flex h-[70vh]">
+                <div class="w-[50%] border border-red-500">
+                    Espacio para información, sintomas, prevención
+                </div>
+                <div class=" w-[50%] border border-red-500">
+                    Espacio para un video o fotos
+                </div>
+            </div>
+            <div class="h-[50vh] border border-red-500">
+                Espacio para certificados o charlas
+            </div>
+        </div>
+
+        <footer class="w-full pt-16 pb-8 bg-gray-50">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 font-['Public_Sans'] text-sm leading-relaxed">
+                <div class="space-y-4">
+                    <div class="text-xl sm:text-lg font-bold text-primary font-['Manrope']">DLMV Terapia</div>
+                        <p class="sm:text-sm text-on-surface-variant leading-relaxed">Excelencia clínica y calidez humana en cada sesión terapéutica.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h5 class="text-primary font-semibold">Ubicación</h5>
+                        <p class="sm:text-sm text-on-surface-variant leading-relaxed">Momentum Escazú, San José</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h5 class="text-primary font-semibold">Contacto</h5>
+                        <p class="sm:text-sm text-on-surface-variant leading-relaxed">+506 8888-8888</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h5 class="text-primary font-semibold">Email</h5>
+                        <p class="sm:text-sm text-on-surface-variant leading-relaxed">hola@dlmvterapia.com</p>
+                    </div>
+                </div>
+                <div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10">
+                        <div class="flex gap-4 justify-center mt-16 h-[10%] mb-[1%]">
+                            <a href="#" class="text-green-500">
+                                <i class="text-xl fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="text-blue-600">
+                                <i class="text-xl fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-black">
+                                <i class="text-xl fa-brands fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="text-pink-500">
+                                <i class="text-xl fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    <p class="text-center text-xs">
+                        © 2026 DLMV Terapia. The Clinical Sanctuary. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="fixed bottom-5 right-5 z-50 flex items-center justify-center">
+            <!-- Onda 1 -->
+            <span class="absolute w-16 h-16 border-2 border-red-300 rounded-full animate-ping opacity-75 [animation-duration:2s]"></span>
+            <!-- Botón -->
+            <a href="https://wa.me/506XXXXXXXX"
+                target="_blank"
+                class="relative w-16 h-16 bg-red-300 hover:bg-red-400 text-white rounded-full flex items-center justify-center shadow-lg text-2xl">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
